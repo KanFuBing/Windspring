@@ -18,7 +18,7 @@ export default function LayoutFooter() {
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
-                ml: 2
+                ml: 1
             }}>
                 <Typography variant='caption' color='#ffffe0' textAlign='justify'>Dedicated to cultural, informational & web causes.</Typography>
             </Box>

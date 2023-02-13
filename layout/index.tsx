@@ -26,7 +26,7 @@ export default function Layout({ children, title }: {
                 backgroundRepeat: 'no-repeat',
             }}>
                 <Box sx={{
-                    backdropFilter: 'blur(3px)',
+                    backdropFilter: 'blur(8px)',
                     width,
                     height: fullHeight ?? '100vh',
                     pl: '5%',
