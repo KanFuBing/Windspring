@@ -1,5 +1,6 @@
 import { Box, Divider, IconButton, Stack, Typography } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import EmailIcon from 'mdi-material-ui/Email'
 import MastodonIcon from 'mdi-material-ui/Mastodon'
 
 export default function LayoutFooter() {
@@ -9,6 +10,9 @@ export default function LayoutFooter() {
             justifyContent='center'
             divider={<Divider orientation='vertical' flexItem />}
             direction='row'>
+            <IconButton target='_blank' rel='noreferrer' href='mailto:ice@windspring.uk'>
+                <EmailIcon htmlColor='#ffffe0'></EmailIcon>
+            </IconButton>
             <IconButton target='_blank' rel='noreferrer' href='https://github.com/kanfubing/windspring/'>
                 <GitHubIcon htmlColor='#ffffe0'></GitHubIcon>
             </IconButton>
@@ -18,7 +22,7 @@ export default function LayoutFooter() {
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
-                ml: 1
+                ml: '10px'
             }}>
                 <Typography variant='caption' color='#ffffe0' textAlign='justify'>Dedicated to cultural, informational & web causes.</Typography>
             </Box>
