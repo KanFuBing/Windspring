@@ -32,7 +32,8 @@ export default function Home() {
   return (
     <Layout title='Windspring'>
       <Grid container spacing={5} sx={{
-        p: '20px 5%',
+        pl: '5%',
+        pr: '5%',
         opacity: 0.9
       }}>
         {

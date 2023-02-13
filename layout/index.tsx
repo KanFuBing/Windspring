@@ -43,7 +43,9 @@ export default function Layout({ children, title }: {
                         <Typography color='#ffffe0' fontStyle='italic'>
                             Where the wind through the window is from.
                         </Typography>
+                        <br></br><br></br>
                         {children}
+                        <br></br>
                     </Box>
                     <LayoutFooter />
                 </Box>
