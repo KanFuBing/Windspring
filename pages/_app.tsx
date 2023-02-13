@@ -3,9 +3,9 @@ import { ThemeProvider } from '@emotion/react'
 import { useMediaQuery, createTheme, CssBaseline } from '@mui/material'
 import type { AppProps } from 'next/app'
 import React from 'react'
-import { Dancing_Script } from '@next/font/google'
+import { Edu_TAS_Beginner } from '@next/font/google'
 
-const dancing_script = Dancing_Script({ subsets: ['latin'] })
+const english = Edu_TAS_Beginner({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
           mode: prefersDarkMode ? 'dark' : 'light',
         },
         typography: {
-          fontFamily: dancing_script.className
+          fontFamily: english.style.fontFamily
         }
       }),
     [prefersDarkMode],

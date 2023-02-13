@@ -5,13 +5,13 @@ const Works = [
   {
     image: '/marbles.png',
     title: 'Marbles',
-    description: 'Pop the marbles into the green holes. \nSign in (GitHub / Google) required.',
+    description: 'Pop the marbles into the green holes! \nSign in (GitHub / Google) required.',
     url: 'https://marbles.windspring.uk'
   },
   {
     image: '/blog.jpg',
     title: 'Blog',
-    description: 'Windspring Blog. (Chinese mainly)',
+    description: 'Blog for Windspring and me. (Chinese mainly)',
     url: 'https://blog.windspring.uk'
   },
   {
@@ -22,7 +22,7 @@ const Works = [
   },
   {
     image: '/tootba.jpg',
-    title: 'トゥート葉 / Tootba',
+    title: 'Tootba',
     description: 'Generate Word Cloud based on your most recent 40 toots. (Japanese)',
     url: 'https://tootba.windspring.uk'
   },
@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <Layout title='Windspring'>
       <Grid container spacing={5} sx={{
-        p: '20px 50px',
+        p: '20px 5%',
         opacity: 0.9
       }}>
         {
@@ -47,11 +47,11 @@ export default function Home() {
                     height={200}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant='h5'>
+                    <Typography gutterBottom variant='h4'>
                       {title}
                     </Typography>
-                    <Typography variant='body2' color='text.secondary' sx={{
-                      whiteSpace: 'pre-line'
+                    <Typography color='text.secondary' fontWeight='bold' sx={{
+                      whiteSpace: 'pre-line',
                     }}>
                       {description}
                     </Typography>

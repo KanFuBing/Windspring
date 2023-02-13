@@ -3,6 +3,9 @@ import { ReactNode } from 'react'
 import { use100vh } from 'react-div-100vh'
 import LayoutFooter from './footer'
 import LayoutHeader from './header'
+import { Dancing_Script } from '@next/font/google'
+
+const ds = Dancing_Script({ subsets: ['latin'] })
 
 export default function Layout({ children, title }: {
     children: ReactNode,
@@ -26,16 +29,18 @@ export default function Layout({ children, title }: {
                     backdropFilter: 'blur(3px)',
                     width,
                     height: fullHeight ?? '100vh',
-                    pl: 5,
-                    pr: 5,
+                    pl: '5%',
+                    pr: '5%',
                     overflowY: 'auto'
                 }}>
                     <Box sx={{
                         minHeight
                     }}>
                         <br></br>
-                        <Typography variant='h4' color='#ffffe0' fontStyle='italic'>Windspring</Typography>
-                        <Typography variant='body2' color='#ffffe0' fontStyle='italic' sx={{ fontSize: 'small' }}>
+                        <Typography variant='h2' color='#ffffe0' fontStyle='italic' fontFamily={ds.style.fontFamily}>
+                            Windspring
+                        </Typography>
+                        <Typography color='#ffffe0' fontStyle='italic'>
                             Where the wind through the window is from.
                         </Typography>
                         {children}
